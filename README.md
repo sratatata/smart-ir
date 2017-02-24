@@ -5,6 +5,11 @@ Harman-Kardon remote for my audio set is so hard to use, that needs buttons to b
 
 The idea behind this project is to simplify usage, and create some macros to operate system easier.
 
+## Structure:
+* [esp-program](./esp-program) - esp firmware
+* [circuit](./circuit) - circuit design and fabrication example
+* [case](./case) - design files and assembly instructions
+
 ## Currently done:
 
 * WifiManager added
@@ -20,18 +25,3 @@ The idea behind this project is to simplify usage, and create some macros to ope
 * Printable case design
 
 If you are interested with similiar projects, please find: [Smart-Power](https://github.com/sratatata/smart-power).
-
-1. Use WifiManager to set-up wifi connection.
-
-# Installation:
-2. Change ip in [platformio.ini](./platformio.ini) to your esp device IP.
-3. Use platformio to upload program and file system.
-
-## PlatformIO upload:
-
-1. Program: ```pio run --target upload```
-2. FS: ```pio run --target uploadfs```
-
-## Dependencies:
-
-* [WifiManager](https://github.com/tzapu/WiFiManager)
